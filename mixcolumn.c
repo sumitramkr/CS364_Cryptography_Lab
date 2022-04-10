@@ -1,5 +1,4 @@
 #include<stdio.h>
-char ans[4];
 char fun(char s){
     char temp=s;
     int g;
@@ -21,7 +20,6 @@ int main(){
     };
     
     //scanf("%c",&ch);
-    int i=0;
     s[0][0]=fun(s[0][0])^fun(s[1][0])^s[1][0]^s[2][0]^s[3][0];
     
     printf("%x\n",s[0][0]);
