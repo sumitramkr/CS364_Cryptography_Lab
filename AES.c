@@ -67,7 +67,7 @@ unsigned char MulBy2[] = {
     0xfb, 0xf9, 0xff, 0xfd, 0xf3, 0xf1, 0xf7, 0xf5, 0xeb, 0xe9, 0xef, 0xed, 0xe3, 0xe1, 0xe7, 0xe5
 };
 
-// Rijndael's Mix Columns source: https://en.wikipedia.org/wiki/Rijndael_MixColumns
+// Rijndael's Inverse Mix Columns source: https://en.wikipedia.org/wiki/Rijndael_MixColumns
 unsigned char MulBy3[] = { 
     0x00, 0x03, 0x06, 0x05, 0x0c, 0x0f, 0x0a, 0x09, 0x18, 0x1b, 0x1e, 0x1d, 0x14, 0x17, 0x12, 0x11,
     0x30, 0x33, 0x36, 0x35, 0x3c, 0x3f, 0x3a, 0x39, 0x28, 0x2b, 0x2e, 0x2d, 0x24, 0x27, 0x22, 0x21,
@@ -87,7 +87,7 @@ unsigned char MulBy3[] = {
     0x0b, 0x08, 0x0d, 0x0e, 0x07, 0x04, 0x01, 0x02, 0x13, 0x10, 0x15, 0x16, 0x1f, 0x1c, 0x19, 0x1a
 };
 
-// Rijndael's Mix Columns source: https://en.wikipedia.org/wiki/Rijndael_MixColumns
+// Multiplication box source: https://en.wikipedia.org/wiki/Rijndael_MixColumns
 unsigned char MulBy9[256] = {
     0X00, 0X09, 0X12, 0X1B, 0X24, 0X2D, 0X36, 0X3F, 0X48, 0X41, 0X5A, 0X53, 0X6C, 0X65, 0X7E, 0X77,
     0X90, 0X99, 0X82, 0X8B, 0XB4, 0XBD, 0XA6, 0XAF, 0XD8, 0XD1, 0XCA, 0XC3, 0XFC, 0XF5, 0XEE, 0XE7,
@@ -107,7 +107,7 @@ unsigned char MulBy9[256] = {
     0X31, 0X38, 0X23, 0X2A, 0X15, 0X1C, 0X07, 0X0E, 0X79, 0X70, 0X6B, 0X62, 0X5D, 0X54, 0X4F, 0X46
 };
 
-// Rijndael's Mix Columns source: https://en.wikipedia.org/wiki/Rijndael_MixColumns
+// Multiplication box source: https://en.wikipedia.org/wiki/Rijndael_MixColumns
 unsigned char MulBy11[256] = {
     0X00, 0X0B, 0X16, 0X1D, 0X2C, 0X27, 0X3A, 0X31, 0X58, 0X53, 0X4E, 0X45, 0X74, 0X7F, 0X62, 0X69,
     0XB0, 0XBB, 0XA6, 0XAD, 0X9C, 0X97, 0X8A, 0X81, 0XE8, 0XE3, 0XFE, 0XF5, 0XC4, 0XCF, 0XD2, 0XD9,
@@ -127,7 +127,7 @@ unsigned char MulBy11[256] = {
     0XCA, 0XC1, 0XDC, 0XD7, 0XE6, 0XED, 0XF0, 0XFB, 0X92, 0X99, 0X84, 0X8F, 0XBE, 0XB5, 0XA8, 0XA3
     };
 
-// Rijndael's Mix Columns source: https://en.wikipedia.org/wiki/Rijndael_MixColumns
+// Multiplication box source: https://en.wikipedia.org/wiki/Rijndael_MixColumns
 unsigned char MulBy13[256] = {
     0X00, 0X0D, 0X1A, 0X17, 0X34, 0X39, 0X2E, 0X23, 0X68, 0X65, 0X72, 0X7F, 0X5C, 0X51, 0X46, 0X4B,
     0XD0, 0XDD, 0XCA, 0XC7, 0XE4, 0XE9, 0XFE, 0XF3, 0XB8, 0XB5, 0XA2, 0XAF, 0X8C, 0X81, 0X96, 0X9B,
@@ -147,7 +147,7 @@ unsigned char MulBy13[256] = {
     0XDC, 0XD1, 0XC6, 0XCB, 0XE8, 0XE5, 0XF2, 0XFF, 0XB4, 0XB9, 0XAE, 0XA3, 0X80, 0X8D, 0X9A, 0X97
 };
 
-// Rijndael's Mix Columns source: https://en.wikipedia.org/wiki/Rijndael_MixColumns
+// Multiplication box source: https://en.wikipedia.org/wiki/Rijndael_MixColumns
 unsigned char MulBy14[256] = {
     0x00, 0x0e, 0x1c, 0x12, 0x38, 0x36, 0x24, 0x2a, 0x70, 0x7e, 0x6c, 0x62, 0x48, 0x46, 0x54, 0x5a,
     0xe0, 0xee, 0xfc, 0xf2, 0xd8, 0xd6, 0xc4, 0xca, 0x90, 0x9e, 0x8c, 0x82, 0xa8, 0xa6, 0xb4, 0xba,
